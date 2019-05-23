@@ -1,10 +1,60 @@
 <h1>Tensorflow Basics</h1>
 
 <h2>WHAT IS TENSORFLOW?</h2>
-   Tensorflow is an open source machine learning platform. The library, developed by Google,
-   provides developers a comprehensive tools, libraries, and community resources that 
-   allow developers to access state-of-the-art machine learning resources to easily build and 
+   Tensorflow is an open source platform specialized in performing machine learning calculations. 
+   Developed by Google, it provides developers comprehensive tools, libraries, and community resources that 
+   allow the world to access state-of-the-art machine learning resources to easily build and 
    launch applications.
+
+   Google describes their framework as, "A software library for numerical computation using data flow graphs. 
+   Nodes in the graph represent mathematical operations, while the graph edges represent the multidimensional 
+   data arrays (tensors) communicated between them."
+
+   <h3>What is a tensor?</h3>
+   Tensors appear everywhere in machine learning equations. Some examples of tensors may include a<strong>vector</strong>, 
+   which is a list of values or a matrix, which is a table. We can combine these to make lists of tables, tables of tables, etc.
+
+   The execution of the mathematical flow across tensors is exactly what this 
+   framework is all about.
+
+     <h4>Multi-layer neural network example</h4>
+
+     In this example we see input data features (‘x1’, ‘x2’, …) going through 2 hidden layers, each with nodes (‘neurons’), 
+     each with weights (‘W’) and bias (‘b’), the output is y.
+
+     https://cdn-images-1.medium.com/max/800/1*mf-zDRbORrug-ki20TJKzg.png
+
+     This becomes a series (a ‘flow’) of numerical computation (‘math’) going from input (‘X’) to output (‘y’). 
+     The math involves multi-dimensional matrices (‘tensors’), constants and variables (eg. bias ‘b1’).
+     
+     https://cdn-images-1.medium.com/max/800/1*YmtjaKz0Pd8Z2gTYAdpk4A.png
+   
+     As a result of repeating this ‘flow’ the weights and biases adjust to ‘fit’ the expected output and a model is built.
+     The framework can have some of the math performed on faster ‘GPU’ processors, which is very useful when working with 
+     large quantities of data. But besides this, a framework for doing a lot of math across a series of equations is useful 
+     to organize and simplify the code. That’s what any framework strives to do.
+
+     <h3>Toy Data</h3> 
+     Let’s imagine an array of 5 bits, this is our input. The output is [0,1] or [1,0] depending on: the 1st and last bit 
+     both being ON or not.
+
+        [0, 1, 1, 1, 1], [0,1]
+        [1, 1, 1, 1, 0], [0,1]
+        [1, 1, 1, 0, 0], [0,1]
+        [1, 1, 0, 0, 0], [0,1]
+        [1, 0, 0, 0, 1], [1,0]
+        [1, 1, 0, 0, 1], [1,0]
+        [1, 1, 1, 0, 1], [1,0]
+        [1, 0, 0, 1, 1], [1,0]
+
+        The entire dataset and its output makes intuitive sense, you (or any reasonably sentient person) could find the pattern 
+        instinctively just by looking at the data.
+
+
+
+
+
+
 
 https://www.tensorflow.org/
 
