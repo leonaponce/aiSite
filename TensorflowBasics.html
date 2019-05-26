@@ -112,9 +112,12 @@ NumPy
 http://www.numpy.org/#numpy
 
 sigmoid function =
-maps any value to a value between 0 and 1. We use it to convert numbers to probabilities. It also has several other desirable properties for training neural networks.
-One of the desirable properties of a sigmoid function is that its output can be used to create its derivative. If the sigmoid's output is a variable "out", then the 
-derivative is simply out * (1-out), which is very efficient. Allowss us to normalize results to within small, managable numbers, in this case between 0 and 1.
+maps any value to a value between 0 and 1. We use it to convert numbers to probabilities. 
+It also has several other desirable properties for training neural networks.
+One of the desirable properties of a sigmoid function is that its output can 
+be used to create its derivative. If the sigmoid's output is a variable "out", then the 
+derivative is simply out * (1-out), which is very efficient. 
+Allowss us to normalize results to within small, managable numbers, in this case between 0 and 1.
 
 gradient AKA sigmoid derivative = tells us about the slope of the curve on any point, this helps 
 us understand how "far off" (i.e. how large our error)
@@ -123,12 +126,19 @@ relative to a specific note.
 
 Derivative = slope of the function at a given point 
 Different points can have different slopes on a curve.
+
+Normalize = multiply (a series, function or item of data) by a factor that makes the norm or some associated 
+quantity such as an integral equal to a desired value (usually 1).
+
 Pseudo-random generation = E.g. rand( ) functionted values are not truly "random" because a mathematical formula is used to generate the values.
 Since the same sequence is generated each time the seed remains the same, the rand( ) function generates a pseudo-random sequence.
+***to prevent the same sequence from being generated each time, usesrand(x) to change the seed value."
 
 over-fitting = tuning ur network too closely 
-"seed" = to prevent the same sequence from being generated each time, use
-srand(x) to change the seed value.
+
+"seed" = a # from which "random" numbers are later generated
+
+
 
 https://en.wikipedia.org/wiki/Sigmoid_function
 
@@ -137,3 +147,6 @@ Later...
 Derivatives tutorial
 https://www.khanacademy.org/test-prep/fr-twelveth-grade-math/les-derivees/introduction-aux-derivees/v/calculus-derivatives-1
 https://en.wikipedia.org/wiki/Sigmoid_function
+
+Testing Qs
+Why are sigmoif fx so useful when creating neural networks
