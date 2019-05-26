@@ -114,7 +114,12 @@ http://www.numpy.org/#numpy
 sigmoid function =
 maps any value to a value between 0 and 1. We use it to convert numbers to probabilities. It also has several other desirable properties for training neural networks.
 One of the desirable properties of a sigmoid function is that its output can be used to create its derivative. If the sigmoid's output is a variable "out", then the 
-derivative is simply out * (1-out), which is very efficient. 
+derivative is simply out * (1-out), which is very efficient. Allowss us to normalize results to within small, managable numbers, in this case between 0 and 1.
+
+gradient AKA sigmoid derivative = tells us about the slope of the curve on any point, this helps 
+us understand how "far off" (i.e. how large our error)
+we are from being "in tune". This like a guitar string tuner, telling us how far we are from being "in tune"
+relative to a specific note.
 
 Derivative = slope of the function at a given point 
 Different points can have different slopes on a curve.
